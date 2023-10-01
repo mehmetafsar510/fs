@@ -13,9 +13,9 @@ fs:
   nameSuffix: fs
   enabled: true
   appKubernetesIoService: fs
-  port: 9090
+  port: 9000
   targetPort: 9000
-  image: harbor.finartz.dev/wallet/wallet_fs
+  image: quay.io/minio/minio:latest
   volume_claim_name: minio-volume
   mount_path: /data
   volume_name: minio-volume
